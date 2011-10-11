@@ -41,7 +41,7 @@ API
 
 The library will create a global variable called `boxeeAPI`.
 
-*Keyboard Modes*:
+**Keyboard Modes**:
 
     // Set the remote to cursor mode.  
     //   -> The d-pad will move around the mouse cursor on the screen.  
@@ -58,7 +58,7 @@ The library will create a global variable called `boxeeAPI`.
 
 
 
-*feedback messages*
+**feedback messages**
 
     // Show a short notification in the top right corner of the screen
     //   Since the browser's console is not accessible, this is one way to get feedback while developing.
@@ -69,7 +69,7 @@ The library will create a global variable called `boxeeAPI`.
 
 
 
-*prompt*
+**prompt**
 
     // Prompt the user with a message and the option to pick "OK" or "CANCEL"
     //   title: string, displayed as a header on popup
