@@ -22,15 +22,18 @@ API
 
 The library will create a global variable called `boxeeAPI`.
 
+    // Set the remote to cursor mode.  
+    //   -> The d-pad will move around the mouse cursor on the screen.  
+    //   -> The center button will map to a mouse click
+    // *note*:
+    //   cursor mode is the default
+    //   you *can* switch between cursor mode and keyboard mode anytime, not just when the page loads
+    boxeeAPI.cursorMode();
+
     // Set the remote to keyboard mode.  
     //   -> The d-pad on the remote will map to the keyboard's arrow keys.  
     //   -> The center button will map to the Enter key.
     boxeeAPI.keyboardMode();
-
-    // Set the remote to cursor mode.  
-    //   -> The d-pad will move around the mouse cursor on the screen.  
-    //   -> The center button will map to a mouse click
-    boxeeAPI.cursorMode();
   
     // Prompt the user with a message and the option to pick "OK" or "CANCEL"
     //   title: string, displayed as a header on popup
