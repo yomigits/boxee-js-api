@@ -5,9 +5,28 @@ a javascript library to control how the Boxee remote interacts with your html5 a
 
 Using boxee-api.js is intended as an easier alternative to using a boxee control script.
 
+This library is specifically for use on apps for the Boxee Box's browser, not the desktop Boxee software.
+
 TO USE IT
 ---
 You must include it on your page after including the jQuery and Underscore libraries
+
+
+Tips
+---
+
+Most of the time, better user experiences come while in keyboard mode, since it simplifies things for the user.  
+
+To make an app in keyboard mode:
+
+  * include the boxee-api.js file on your pages
+  * call `boxeeAPI.keyboardMode()` when a page loads
+  * design the app so it can be controlled without using the mouse, and by only pressing arrow keys and enter
+  * the Boxee remote does have a keyboard on the back, but it should only be used for typing, not navigation
+      * keyboard is ok when entering a search query, or entering login credentials
+      * don't hook special modes to letter keys. for example having the user press 'f' to enter a full screen mode is a bad experience.  Make it possible to do things like this with only the arrow keys and enter.
+      
+Since the Boxee box's browser does not give a developer easy access to console info, I recommend doing as much of the development as possible in chrome or safari, and test occasionally on the box.
 
 
 Example usage
@@ -56,6 +75,7 @@ The library will create a global variable called `boxeeAPI`.
     //   Since the browser's console is not accessible, this is one way to get feedback while developing.
     //
     //   message: string to display (will be truncated if too long)
-    //   seconds: integer length of time in seconds to show message (defaults to 2)
+    //   seconds (optional): integer length of time in seconds to show message (defaults to 2)
     boxeeAPI.notify(message, seconds = 2)
+
 
