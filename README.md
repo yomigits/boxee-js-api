@@ -57,6 +57,14 @@ The library will create a global variable called `boxeeAPI`.
     boxeeAPI.keyboardMode();
 
 
+**Closing an App**
+
+    // Exit the current App
+    boxeeAPI.closeApp();
+    
+    // Close the boxee browser
+    boxeeAPI.closeBrowser();
+
 
 **feedback messages**
 
