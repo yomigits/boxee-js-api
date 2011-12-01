@@ -7,6 +7,8 @@ Using boxee-api.js is intended as an easier alternative to using a boxee control
 
 This library is specifically for use on apps for the Boxee Box's browser, not the desktop Boxee software.
 
+To understand how this library works, and for a deeper discussion of the two javascript context system present in the Boxee Browser, see http://developer.boxee.tv/Control_Script_Context
+
 TO USE IT
 ---
 You must include it on your page after including the jQuery and Underscore libraries
